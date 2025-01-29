@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Initial size */
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.2); /* Zoom out (smaller) */
+    opacity: 0;
+  }
+}
+
+.zoomInOut {
+  animation: zoomInOut 2s ease-in-out infinite; /* Adjusted to 1.5s for faster animation */
+}
