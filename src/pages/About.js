@@ -3,10 +3,14 @@ import "../App.css"
 import { FaArrowRight } from 'react-icons/fa';
 import I1 from "../requirements/img2.jpg";
 import I2 from "../requirements/img1.png";
+import I3 from '../requirements/img3.jpg';
+import I4 from '../requirements/img4.png';
+import I5 from '../requirements/img5.png'; 
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-white flex justify-center items-center py-20">
+    <div>
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center py-20">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-8">
 
         {/* Left - Image Section */}
@@ -58,6 +62,94 @@ const About = () => {
         </div>
       </div>
     </div>
+        <div className="bg-gray-100 p-16 libre-baskerville-text"> {/* Increased padding and applied custom font */}
+        {/* Main Section */}
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          {/* Left Side - Text Content */}
+          <div className="md:w-1/2 text-left md:ml-14"> {/* Increased left margin */}
+            <h2 className="text-5xl font-bold text-gray-800 mb-8 leading-tight"> 
+              A Quality-Driven <br /> Catering Company
+            </h2>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              We have been one of the successful names in the business when it comes 
+              to providing catering and services. Our team has completed all the events 
+              on large and medium scales just the way it has been asked by the client. 
+              Whether you need service indoors or outdoors, we can take care of it just 
+              the way you want.
+            </p>
+  
+            {/* OUR MENU Button - Left to Right Hover Effect */}
+            <a
+              href="#menu"
+              className="relative flex items-center border-2 border-black text-black px-8 py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
+            >
+              {/* Background effect (Left to Right) */}
+              <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              
+              {/* Button Text */}
+              <span className="relative z-20 group-hover:text-black transition-colors duration-300">
+                OUR MENU
+              </span>
+  
+              {/* Arrow Circle */}
+              <div className="ml-3 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
+                <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black" />
+              </div>
+            </a>
+          </div>
+  
+          {/* Right Side - Main Image */}
+          <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
+            <img 
+              src={I3} 
+              alt="Catering Service" 
+              className="w-full max-w-2xl rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+  
+        {/* Always Quality & Our Team Section */}
+        <div className="text-center mt-20">
+          <h2 className="text-4xl font-bold mb-4">Always Quality<span className="text-[#E9b472]">.</span></h2> {/* Only dot in sand color */}
+          <h2 className="text-5xl font-bold text-gray-800 mt-12 mb-4">Our Team</h2>
+        </div>
+  
+        {/* Team Images */}
+        <div className="flex flex-col md:flex-row items-center justify-center mt-16 gap-8"> {/* Increased gap and top margin */}
+          {/* Team Member 1 - FOUNDER */}
+          <div className="relative flex flex-col items-center bg-gray-200 p-14 rounded-lg shadow-lg max-w-xl mx-4 w-full h-full"> {/* Increased size of container */}
+            <div className="w-96 h-96 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
+              <img 
+                src={I4} 
+                alt="Team Member 1" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="absolute top-106 left-0 right-0 text-center text-lg font-semibold text-gray-800">
+              <span className="bg-[#951F44] text-white p-3 rounded-full">FOUNDER</span> {/* FOUNDER tag */}
+            </div>
+            <h3 className="text-2xl mt-8 font-bold text-gray-800">PROP.J.GURUMURRTHY</h3>
+            <p className="text-lg text-gray-600 mt-4">B.SC., M.B.A., M.T.M., M.Phil., Ph.D[p]</p>
+          </div>
+  
+          {/* Team Member 2 - CEO */}
+          <div className="relative flex flex-col items-center bg-gray-200 p-14 rounded-lg shadow-lg max-w-xl mx-4 w-full h-full"> {/* Increased size of container */}
+            <div className="w-96 h-96 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
+              <img 
+                src={I5} 
+                alt="Team Member 2" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="absolute top-106 left-0 right-0 text-center text-lg font-semibold text-gray-800">
+              <span className="bg-[#951F44] text-white p-3 rounded-full">CEO</span> {/* CEO tag */}
+            </div>
+            <h3 className="text-2xl mt-8 font-bold text-gray-800">RUDHRESH GK</h3>
+            <p className="text-lg text-gray-600 mt-4">B.E</p>
+          </div>
+        </div>
+      </div>
+      </div>
   );
 };
 
