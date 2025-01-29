@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div>
             <div
-      className="flex flex-col items-center mt-25 justify-center text-center h-[200px] relative"
+      className="flex flex-col items-center mt-22 justify-center text-center h-[200px] relative"
       style={{
         backgroundImage: `url(${AB})`,
         backgroundSize: 'cover',
@@ -29,74 +29,76 @@ const About = () => {
       </div>
     </div>
     <div className="min-h-screen bg-gray-100 flex justify-center items-center py-20">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-8">
-
-        {/* Left - Image Section */}
-        <div className="relative w-full lg:w-1/2 flex justify-center">
-          <div className="flex gap-6">
-            {/* Left Image */}
-            <div className="w-[45%] h-[580px]">
-              <img 
-                src={I1}
-                alt="Elegant table setting"
-                className="w-full h-full rounded-2xl shadow-lg"
-              />
-            </div>
-
-            {/* Right Image (With Overlapping Badge) */}
-            <div className="w-[45%] h-[580px] relative">
-              <img 
-                src={I2}
-                alt="Floral table decoration"
-                className="w-full h-full rounded-2xl shadow-lg"
-              />
-
-              {/* "Since 1998" Badge */}
-              <div className="absolute -top-16 left-56 bg-[#8B1F41] text-white rounded-full w-[180px] h-[180px] flex flex-col items-center justify-center shadow-lg border-8 border-[#E9b472]">
-                <div className="text-lg font-medium libre-baskerville-text">Since</div>
-                <div className="text-4xl font-bold libre-baskerville-text">1998</div>
+        <div className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-4 lg:px-8">
+  
+          {/* Left - Image Section */}
+          <div className="relative w-full lg:w-1/2 flex justify-center">
+            <div className="flex flex-row gap-4 lg:gap-6 w-full">
+              {/* Left Image */}
+              <div className="w-[48%] lg:w-[45%] h-[380px] lg:h-[580px]">
+                <img 
+                  src={I1}
+                  alt="Elegant table setting"
+                  className="w-full h-full object-cover rounded-2xl shadow-lg"
+                />
+              </div>
+  
+              {/* Right Image (With Overlapping Badge) */}
+              <div className="w-[48%] lg:w-[45%] h-[380px] lg:h-[580px] relative">
+                <img 
+                  src={I2}
+                  alt="Floral table decoration"
+                  className="w-full h-full object-cover rounded-2xl shadow-lg"
+                />
+  
+                {/* "Since 1998" Badge */}
+                <div className="absolute -top-8 lg:-top-16 right-0 lg:left-56 bg-[#8B1F41] text-white rounded-full w-[100px] h-[100px] lg:w-[180px] lg:h-[180px] flex flex-col items-center justify-center shadow-lg border-4 lg:border-8 border-[#E9b472]">
+                  <div className="text-sm lg:text-lg font-medium libre-baskerville-text">Since</div>
+                  <div className="text-2xl lg:text-4xl font-bold libre-baskerville-text">1998</div>
+                </div>
               </div>
             </div>
           </div>
+  
+          {/* Right - Text Section */}
+          <div className="w-full lg:w-1/2 pl-6 lg:pl-22">
+            <h3 className="text-[#8B1F41] uppercase tracking-widest text-sm font-semibold mb-3">
+              About Us
+            </h3>
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 libre-baskerville-text">
+              Indulge in a celebration <br className="hidden lg:block" /> with great food!
+            </h1>
+            <p className="text-gray-700 text-base lg:text-lg leading-7 mb-8 libre-baskerville-text">
+              Venus Catering Service is a professional catering company that was established in 1998, offering comprehensive services to meet all your culinary needs for nearly two decades. Our primary goal is to provide a unique and memorable dining experience with each meal we serve. We are committed to maintaining uncompromised quality, exceptional hygiene standards, meticulous presentation, and attention to detail to ensure the utmost satisfaction of our customers.
+            </p>
+  
+            {/* Book Now Button */}
+            <a
+              href="#menu"
+              className="relative flex items-center border-2 border-black text-black px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
+            >
+              {/* Background effect */}
+              <span className="absolute inset-0 bg-[#E9B472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              
+              {/* Button Text */}
+              <span className="relative z-20 group-hover:text-black transition-colors duration-300">
+                BOOK NOW
+              </span>
+    
+              {/* Arrow Circle */}
+              <div className="ml-3 flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
+                <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black text-sm lg:text-base" />
+              </div>
+            </a>
+          </div>
         </div>
-
-        {/* Right - Text Section */}
-        <div className="w-full pl-22 lg:w-1/2">
-          <h3 className="text-[#8B1F41] uppercase tracking-widest text-sm font-semibold mb-3">About Us</h3>
-          <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-6 libre-baskerville-text">
-            Indulge in a celebration <br /> with great food!
-          </h1>
-          <p className="text-gray-700 text-lg leading-7 mb-8 libre-baskerville-text">
-            Venus Catering Service is a professional catering company that was established in 1998, offering comprehensive services to meet all your culinary needs for nearly two decades. Our primary goal is to provide a unique and memorable dining experience with each meal we serve. We are committed to maintaining uncompromised quality, exceptional hygiene standards, meticulous presentation, and attention to detail to ensure the utmost satisfaction of our customers.
-          </p>
-
-          {/* Book Now Button */}
-          <a
-      href="#menu"
-      className="relative flex items-center border-2 border-black text-black px-8 py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
-    >
-      {/* Background effect (Left to Right) */}
-      <span className="absolute inset-0 bg-[#E9B472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
-      
-      {/* Button Text */}
-      <span className="relative z-20 group-hover:text-black transition-colors duration-300">
-        BOOK NOW
-      </span>
-
-      {/* Arrow Circle */}
-      <div className="ml-3 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
-        <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black" />
       </div>
-    </a>
-        </div>
-      </div>
-    </div>
         <div className="bg-gray-100 p-16 libre-baskerville-text"> {/* Increased padding and applied custom font */}
         {/* Main Section */}
         <div className="flex flex-col md:flex-row items-center justify-center">
           {/* Left Side - Text Content */}
           <div className="md:w-1/2 text-left md:ml-14"> {/* Increased left margin */}
-            <h2 className="text-5xl font-bold text-gray-800 mb-8 leading-tight"> 
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-8 leading-tight"> 
               A Quality-Driven <br /> Catering Company
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
