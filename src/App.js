@@ -6,6 +6,8 @@ import About from "./pages/About";
 function App() {
   return (
     <div>
+      <Navbar />
+      <Home />
       <About />
     </div>
   );

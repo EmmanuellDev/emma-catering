@@ -5,11 +5,29 @@ import I1 from "../requirements/img2.jpg";
 import I2 from "../requirements/img1.png";
 import I3 from '../requirements/img3.jpg';
 import I4 from '../requirements/img4.png';
-import I5 from '../requirements/img5.png'; 
+import I5 from '../requirements/img5.png';
+import AB from "../requirements/about-bg.png";
 
 const About = () => {
   return (
     <div>
+            <div
+      className="flex flex-col items-center mt-25 justify-center text-center h-[200px] relative"
+      style={{
+        backgroundImage: `url(${AB})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        fontFamily: 'Libre Baskerville, serif',
+      }}
+    >
+      {/* Overlay to dull the background */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      <div className="relative text-white p-4">
+        <h1 className="text-5xl mb-6">About Us</h1>
+        <p className="text-1xl">Website / About Us</p>
+      </div>
+    </div>
     <div className="min-h-screen bg-gray-100 flex justify-center items-center py-20">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-8">
 
@@ -17,7 +35,7 @@ const About = () => {
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <div className="flex gap-6">
             {/* Left Image */}
-            <div className="w-[45%] h-[700px]">
+            <div className="w-[45%] h-[580px]">
               <img 
                 src={I1}
                 alt="Elegant table setting"
@@ -26,7 +44,7 @@ const About = () => {
             </div>
 
             {/* Right Image (With Overlapping Badge) */}
-            <div className="w-[45%] h-[700px] relative">
+            <div className="w-[45%] h-[580px] relative">
               <img 
                 src={I2}
                 alt="Floral table decoration"
@@ -34,7 +52,7 @@ const About = () => {
               />
 
               {/* "Since 1998" Badge */}
-              <div className="absolute -top-14 left-64 bg-[#8B1F41] text-white rounded-full w-[180px] h-[180px] flex flex-col items-center justify-center shadow-lg border-8 border-[#E9b472]">
+              <div className="absolute -top-16 left-56 bg-[#8B1F41] text-white rounded-full w-[180px] h-[180px] flex flex-col items-center justify-center shadow-lg border-8 border-[#E9b472]">
                 <div className="text-lg font-medium libre-baskerville-text">Since</div>
                 <div className="text-4xl font-bold libre-baskerville-text">1998</div>
               </div>
@@ -53,12 +71,23 @@ const About = () => {
           </p>
 
           {/* Book Now Button */}
-          <a href="#book-now" className="inline-flex items-center border-2 border-gray-800 text-gray-800 text-lg font-medium px-6 py-3 rounded-full shadow-md hover:bg-gray-800 hover:text-white transition duration-300 origin-left">
-            Book Now
-            <span className="ml-3 bg-[#8B1F41] text-white p-2 rounded-full">
-              <FaArrowRight className="w-4 h-4 text-white group-hover:text-black transition-colors duration-300" />
-            </span>
-          </a>
+          <a
+      href="#menu"
+      className="relative flex items-center border-2 border-black text-black px-8 py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
+    >
+      {/* Background effect (Left to Right) */}
+      <span className="absolute inset-0 bg-[#E9B472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+      
+      {/* Button Text */}
+      <span className="relative z-20 group-hover:text-black transition-colors duration-300">
+        BOOK NOW
+      </span>
+
+      {/* Arrow Circle */}
+      <div className="ml-3 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
+        <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black" />
+      </div>
+    </a>
         </div>
       </div>
     </div>
@@ -110,14 +139,14 @@ const About = () => {
   
         {/* Always Quality & Our Team Section */}
         <div className="text-center mt-20">
-          <h2 className="text-4xl font-bold mb-4">Always Quality<span className="text-[#E9b472]">.</span></h2> {/* Only dot in sand color */}
-          <h2 className="text-5xl font-bold text-gray-800 mt-12 mb-4">Our Team</h2>
+          <h2 className="text-xl font-bold mb-1">Always Quality<span className="text-[#E9b472]">.</span></h2> {/* Only dot in sand color */}
+          <h2 className="text-5xl font-bold text-gray-800 mt-2 mb-4">Our Team</h2>
         </div>
   
         {/* Team Images */}
-        <div className="flex flex-col md:flex-row items-center justify-center mt-16 gap-8"> {/* Increased gap and top margin */}
+        <div className="flex flex-col md:flex-row items-center justify-center mt-10 gap-8"> {/* Increased gap and top margin */}
           {/* Team Member 1 - FOUNDER */}
-          <div className="relative flex flex-col items-center bg-gray-200 p-14 rounded-lg shadow-lg max-w-xl mx-4 w-full h-full"> {/* Increased size of container */}
+          <div className="relative flex flex-col items-center bg-gray-200 p-7 rounded-lg shadow-lg max-w-xl mx-4 w-full h-full"> {/* Increased size of container */}
             <div className="w-96 h-96 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
               <img 
                 src={I4} 
@@ -125,15 +154,15 @@ const About = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="absolute top-106 left-0 right-0 text-center text-lg font-semibold text-gray-800">
+            <div className="absolute top-100 left-0 right-0 text-center text-lg font-semibold text-gray-800">
               <span className="bg-[#951F44] text-white p-3 rounded-full">FOUNDER</span> {/* FOUNDER tag */}
             </div>
-            <h3 className="text-2xl mt-8 font-bold text-gray-800">PROP.J.GURUMURRTHY</h3>
+            <h3 className="text-2xl mt-8 font-bold text-gray-800">PROP.S.SARAVANAN</h3>
             <p className="text-lg text-gray-600 mt-4">B.SC., M.B.A., M.T.M., M.Phil., Ph.D[p]</p>
           </div>
   
           {/* Team Member 2 - CEO */}
-          <div className="relative flex flex-col items-center bg-gray-200 p-14 rounded-lg shadow-lg max-w-xl mx-4 w-full h-full"> {/* Increased size of container */}
+          <div className="relative flex flex-col items-center bg-gray-200 p-7 rounded-lg shadow-lg max-w-xl mx-4 w-full h-full"> {/* Increased size of container */}
             <div className="w-96 h-96 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
               <img 
                 src={I5} 
@@ -141,10 +170,10 @@ const About = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="absolute top-106 left-0 right-0 text-center text-lg font-semibold text-gray-800">
+            <div className="absolute top-100 left-0 right-0 text-center text-lg font-semibold text-gray-800">
               <span className="bg-[#951F44] text-white p-3 rounded-full">CEO</span> {/* CEO tag */}
             </div>
-            <h3 className="text-2xl mt-8 font-bold text-gray-800">RUDHRESH GK</h3>
+            <h3 className="text-2xl mt-8 font-bold text-gray-800">GOKUL PRIYAN.S</h3>
             <p className="text-lg text-gray-600 mt-4">B.E</p>
           </div>
         </div>
