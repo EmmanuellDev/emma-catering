@@ -10,7 +10,7 @@ import Gallery from "../src/pages/Gallery"
 function App() {
   return (
     <div>
-      <Gallery />
+      <Footer />
     </div>
   );
 }
