@@ -70,3 +70,17 @@
 .zoomInOut {
   animation: zoomInOut 1s ease-in-out infinite; /* Adjusted to 1.5s for faster animation */
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}

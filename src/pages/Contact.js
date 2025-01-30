@@ -1,6 +1,7 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 import AB from "../requirements/about-bg.png";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const ContactPage = () => {
     const title = "Contact";
@@ -135,6 +136,7 @@ const ContactPage = () => {
     </div>
 
     </div>
+    <Footer />
     </div>
   );
 };

@@ -26,7 +26,6 @@ export default function Navbar() {
           <li><a href="#services" className="hover:text-[#E9b472] transition-colors duration-300">Services</a></li>
           <li><a href="#menu" className="hover:text-[#E9b472] transition-colors duration-300">Menu</a></li>
           <li><a href="#gallery" className="hover:text-[#E9b472] transition-colors duration-300">Gallery</a></li>
-          <li><a href="#blogs" className="hover:text-[#E9b472] transition-colors duration-300">Blogs</a></li>
           <li><a href="#contact" className="hover:text-[#E9b472] transition-colors duration-300">Contact</a></li>
         </ul>
 
@@ -61,7 +60,6 @@ export default function Navbar() {
             <li><a href="#services" className="hover:text-[#951F44]">Services</a></li>
             <li><a href="#menu" className="hover:text-[#951F44]">Menu</a></li>
             <li><a href="#gallery" className="hover:text-[#951F44]">Gallery</a></li>
-            <li><a href="#blogs" className="hover:text-[#951F44]">Blogs</a></li>
             <li><a href="#contact" className="hover:text-[#951F44]">Contact</a></li>
           </ul>
           {/* Centered Book Now Button */}

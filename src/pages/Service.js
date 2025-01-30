@@ -9,6 +9,7 @@ import E8 from "../requirements/img-eve-8.png";
 import E9 from "../requirements/img-eve-9.png";
 import AB from "../requirements/about-bg.png";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const services = [
   {
@@ -71,7 +72,7 @@ const ServicePage = () => {
   const title = "Services";
   const title1 = "Premium Catering Services";
   return (
-    <div>
+    <div className="bg-gray-100">
           <div
       className="flex flex-col items-center mt-22 justify-center text-center h-[200px] relative"
       style={{
@@ -135,6 +136,7 @@ const ServicePage = () => {
         ))}
       </div>
     </div>
+    <Footer />
     </div>
   );
 };

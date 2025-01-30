@@ -8,6 +8,7 @@ import I4 from '../requirements/img4.png';
 import I5 from '../requirements/img5.png';
 import AB from "../requirements/about-bg.png";
 import { motion } from "framer-motion";
+import Footer from '../components/Footer';
 
 const About = () => {
   const title = "About";
@@ -194,6 +195,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
       </div>
   );
 };
