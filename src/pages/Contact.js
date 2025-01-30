@@ -63,7 +63,7 @@ const ContactPage = () => {
         </p>
         {/* Book Now Button */}
             <a
-              href="#menu"
+              href="https://wa.me/9994873204"
               className="relative flex items-center border-2 border-black text-black px-6 py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
             >
               {/* Background effect (Left to Right) */}

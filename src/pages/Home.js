@@ -55,7 +55,7 @@ const Home = () => {
         <div className="mt-10 flex flex-row space-x-6">
           <div>
             <a
-              href="#explore"
+              href="/gallery"
               className="relative flex items-center justify-center border-2 border-white text-white px-6 py-2 rounded-full font-semibold shadow-md group overflow-hidden hover:text-black hover:border-white"
             >
               <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
@@ -69,7 +69,7 @@ const Home = () => {
           </div>
           <div>
             <a
-              href="#contact"
+              href="/contact"
               className="relative flex items-center justify-center border-2 border-white text-white px-6 py-2 rounded-full font-semibold shadow-md group overflow-hidden hover:text-black hover:border-white"
             >
               <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
@@ -87,12 +87,12 @@ const Home = () => {
         <div className="pt-32">
           <a
             href="/about"
-            className="relative flex items-center rounded-full justify-center border-1 border-white text-white px-3 py-3 rounded-full font-semibold shadow-md group overflow-hidden animate-bounce"
-            style={{ borderRadius: "50px / 15px" }} // Custom border radius for oval effect
+            className="relative flex items-center rounded-full justify-center border-1 border-white text-white px-1 py-3 rounded-full font-semibold shadow-md group overflow-hidden animate-bounce"
+            style={{ borderRadius: "15px / 15px" }} // Custom border radius for oval effect
           >
-            <div className="absolute inset-0 bg-[#951F44] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             <span className="relative z-20">
-              <FaArrowDown className="text-white text-3xl" />
+              <FaArrowDown className="text-white text-1xl group-hover:text-black" />
             </span>
           </a>
         </div>

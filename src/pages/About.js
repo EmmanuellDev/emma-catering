@@ -89,7 +89,7 @@ const About = () => {
   
             {/* Book Now Button */}
             <a
-              href="#menu"
+              href="https://wa.me/9994873204"
               className="relative flex items-center border-2 border-black text-black px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
             >
               {/* Background effect */}
@@ -126,7 +126,7 @@ const About = () => {
   
             {/* OUR MENU Button - Left to Right Hover Effect */}
             <a
-              href="#menu"
+              href="/menu"
               className="relative flex items-center border-2 border-black text-black px-8 py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
             >
               {/* Background effect (Left to Right) */}
