@@ -8,7 +8,7 @@
 * npm install react-icons
 * npm install react-router-dom
 * npm install animate.css
+* npm install framer-motion
 
-import I1 from "../requirements/img1.png"
-import I2 from "../requirements/img2.jpg"
+
 
