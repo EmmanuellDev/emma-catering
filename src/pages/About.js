@@ -137,7 +137,7 @@ const About = () => {
               </span>
   
               {/* Arrow Circle */}
-              <div className="ml-3 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
+              <div className="ml-3 flex items-center justify-center w-12 h-8 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
                 <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black" />
               </div>
             </a>
