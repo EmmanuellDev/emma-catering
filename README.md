@@ -12,4 +12,3 @@
 import I1 from "../requirements/img1.png"
 import I2 from "../requirements/img2.jpg"
 
-

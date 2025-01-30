@@ -7,24 +7,38 @@ import I3 from '../requirements/img3.jpg';
 import I4 from '../requirements/img4.png';
 import I5 from '../requirements/img5.png';
 import AB from "../requirements/about-bg.png";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const title = "About";
   return (
     <div>
-            <div
+    <div
       className="flex flex-col items-center mt-22 justify-center text-center h-[200px] relative"
       style={{
         backgroundImage: `url(${AB})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        fontFamily: 'Libre Baskerville, serif',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        fontFamily: "Libre Baskerville, serif",
       }}
     >
       {/* Overlay to dull the background */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative text-white p-4">
-        <h1 className="text-5xl mb-6">About Us</h1>
+        <h1 className="text-5xl mb-6 flex">
+          {title.split("").map((letter, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, x: -20 }} // Start from left (-20px)
+              animate={{ opacity: 1, x: 0 }} // Move to its normal position
+              transition={{ delay: index * 0.2, duration: 0.4 }}
+              className="mr-1" // Adds spacing between letters
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </h1>
         <p className="text-1xl">Website / About Us</p>
       </div>
     </div>
@@ -141,7 +155,7 @@ const About = () => {
   
         {/* Always Quality & Our Team Section */}
         <div className="text-center mt-20">
-          <h2 className="text-xl font-bold mb-1">Always Quality<span className="text-[#E9b472]">.</span></h2> {/* Only dot in sand color */}
+          <h2 className="text-3xl font-bold mb-1 libre-baskerville-text1">Always Quality<span className="text-[#951F44] animate-pulse"> ~</span></h2> {/* Only dot in sand color */}
           <h2 className="text-5xl font-bold text-gray-800 mt-2 mb-4">Our Team</h2>
         </div>
   
