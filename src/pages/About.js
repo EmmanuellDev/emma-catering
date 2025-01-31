@@ -89,22 +89,22 @@ const About = () => {
   
             {/* Book Now Button */}
             <a
-              href="https://wa.me/9994873204"
-              className="relative flex items-center border-2 border-black text-black px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
-            >
-              {/* Background effect */}
-              <span className="absolute inset-0 bg-[#E9B472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
-              
-              {/* Button Text */}
-              <span className="relative z-20 group-hover:text-black transition-colors duration-300">
-                BOOK NOW
-              </span>
-    
-              {/* Arrow Circle */}
-              <div className="ml-3 flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
-                <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black text-sm lg:text-base" />
-              </div>
-            </a>
+      href="https://wa.me/9994873204"
+      className="relative flex items-center border-2 border-black text-black px-6 lg:px-8 py-3 lg:py-3 rounded-full font-semibold shadow-md group w-auto overflow-hidden"
+    >
+      {/* Background effect (Now at z-10) */}
+      <span className="absolute inset-0 bg-[#E9B472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-10"></span>
+
+      {/* Button Text (Now at z-20, stays above background) */}
+      <span className="relative z-20 transition-colors duration-300 group-hover:text-black">
+        BOOK NOW
+      </span>
+
+      {/* Arrow Circle (Now at z-20, properly visible) */}
+      <div className="ml-3 flex items-center justify-center w-9 h-9 lg:w-10 lg:h-10 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
+        <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black text-base lg:text-lg" />
+      </div>
+    </a>
           </div>
         </div>
       </div>

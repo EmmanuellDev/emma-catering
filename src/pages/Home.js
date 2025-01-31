@@ -55,7 +55,7 @@ const Home = () => {
         <div className="mt-10 flex flex-row space-x-6">
           <div>
             <a
-              href="/gallery"
+              href="/menu"
               className="relative flex items-center justify-center border-2 border-white text-white px-6 py-2 rounded-full font-semibold shadow-md group overflow-hidden hover:text-black hover:border-white"
             >
               <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>

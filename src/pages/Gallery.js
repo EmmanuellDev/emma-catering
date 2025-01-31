@@ -43,7 +43,7 @@ const Gallery = () => {
             </motion.span>
           ))}
         </h1>
-        <p className="text-1xl">Website / About Us</p>
+        <p className="text-1xl">Website / Gallery</p>
       </div>
     </div>
     <div className="bg-gray-200 py-12">

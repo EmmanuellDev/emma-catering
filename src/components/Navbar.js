@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-10">
+    <header className="bg-gray-100 shadow-md fixed top-0 left-0 w-full z-10">
       <nav className="container mx-auto flex items-center justify-between py-4">
         {/* Logo */}
         <div className="text-2xl font-bold text-black ml-4">
