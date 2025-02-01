@@ -58,7 +58,7 @@ const Footer = () => {
           
           {/* Logo and Social Section */}
           <div className="w-full md:w-1/3 flex flex-col items-center md:items-start space-y-6">
-            <img src={logo} alt="Venus Catering" className="h-12 md:h-16" />
+            <img src={logo} alt="Venus Catering" className="h-20 md:h-16 w-33" />
             <p className="lg:text-xl md:text-2xl libre-baskerville-text text-center md:text-left px-4 md:px-0">
               Let Venus Catering transform your special occasion into a masterpiece with our professional touch.
             </p>

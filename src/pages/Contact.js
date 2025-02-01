@@ -70,12 +70,12 @@ const ContactPage = () => {
               <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
               
               {/* Button Text */}
-              <span className="relative z-20 group-hover:text-black transition-colors duration-300">
+              <span className="relative group-hover:text-black transition-colors duration-300">
                 BOOK NOW
               </span>
   
               {/* Arrow Circle */}
-              <div className="ml-3 flex items-center justify-center w-10 h-8 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
+              <div className="ml-3 flex items-center justify-center w-10 h-8 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white">
                 <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black" />
               </div>
             </a>

@@ -116,7 +116,7 @@ const About = () => {
             <h2 className="text-4xl aclonica-regular lg:text-5xl font-bold text-gray-800 mb-8 leading-tight"> 
               A Quality-Driven <br /> Catering Company
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-base text-gray-600 mb-8 leading-relaxed">
               We have been one of the successful names in the business when it comes 
               to providing catering and services. Our team has completed all the events 
               on large and medium scales just the way it has been asked by the client. 
@@ -157,7 +157,7 @@ const About = () => {
         {/* Always Quality & Our Team Section */}
         <div className="text-center mt-20">
           <h2 className="text-3xl font-bold mb-1 libre-baskerville-text1">Always Quality<span className="text-[#951F44] animate-pulse"> ~</span></h2> {/* Only dot in sand color */}
-          <h2 className="text-5xl font-bold text-gray-800 mt-2 mb-4">Our Team</h2>
+          <h2 className="text-5xl font-bold text-gray-800 mt-2 mb-4 aclonica-regular">Our Team</h2>
         </div>
   
         {/* Team Images */}
