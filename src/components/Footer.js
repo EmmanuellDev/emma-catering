@@ -59,20 +59,19 @@ const Footer = () => {
           {/* Logo and Social Section */}
           <div className="w-full md:w-1/3 flex flex-col items-center md:items-start space-y-6">
             <img src={logo} alt="Venus Catering" className="h-12 md:h-16" />
-            <p className="text-xl md:text-2xl libre-baskerville-text text-center md:text-left px-4 md:px-0">
+            <p className="lg:text-xl md:text-2xl libre-baskerville-text text-center md:text-left px-4 md:px-0">
               Let Venus Catering transform your special occasion into a masterpiece with our professional touch.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
               {['FaFacebookF', 'FaInstagram', 'FaYoutube', 'FaWhatsapp'].map((icon, index) => (
                 <a 
                   key={index} 
-                  href="#" 
                   className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-gray-700 text-white text-xl md:text-2xl hover:border-2 hover:border-white hover:bg-[#E9b472] transition-all"
                 >
-                  {icon === 'FaFacebookF' && <FaFacebookF />}
-                  {icon === 'FaInstagram' && <FaInstagram />}
-                  {icon === 'FaYoutube' && <FaYoutube />}
-                  {icon === 'FaWhatsapp' && <FaWhatsapp />}
+                  {icon === 'FaFacebookF' && <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>}
+                  {icon === 'FaInstagram' && <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>}
+                  {icon === 'FaYoutube' && <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>}
+                  {icon === 'FaWhatsapp' && <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>}
                 </a>
               ))}
             </div>
@@ -80,8 +79,8 @@ const Footer = () => {
 
         {/* Session 2: Our Services */}
         <div className="lg:w-1/3 pl-4">
-          <h3 className="text-4xl mb-3 pb-6 libre-baskerville-text">Our Services</h3>
-          <div className="grid lg:grid-cols-2 lg:gap-6 libre-baskerville-text justify-center text-xl space-y-4">
+          <h3 className="lg:text-4xl text-3xl mb-3 pb-6 aclonica-regular">Our Services</h3>
+          <div className="grid lg:grid-cols-2 lg:gap-6 libre-baskerville-text justify-center lg:text-xl text-lg space-y-4">
             <div>
               <p><MdArrowForward className="inline text-[#E9b472]" /> Wedding Event</p>
               <p className="mt-4"><MdArrowForward className="inline text-[#E9b472]" /> 60th Wedding</p>
@@ -100,8 +99,8 @@ const Footer = () => {
 
           {/* Contact Section */}
           <div className="w-full md:w-1/3 pl-6 md:pl-0 space-y-6">
-            <h3 className="text-3xl md:text-4xl libre-baskerville-text">Contact Now</h3>
-            <div className="space-y-6">
+            <h3 className="text-3xl md:text-4xl aclonica-regular">Contact Now</h3>
+            <div className="space-y-6 ">
               {[
                 { icon: <FaMapMarkerAlt />, content: "No.1/379B, Kannagi Street, Jalladianpet, Pallikarani, Medavakkam, Chennai - 600 100.", type: "text" },
                 { icon: <FaPhone />, content: "+91 98409 35064", type: "phone" },
@@ -132,12 +131,12 @@ const Footer = () => {
           {/* Mobile View (centered, two lines) */}
           <div className="md:hidden text-center flex flex-col space-y-2">
             <span>© 2024 <span className="font-bold text-lg">DREAM CATERINGS.</span> All rights reserved</span>
-            <span>Designed By <span className="text-[#E9b470] text-lg">Team Espoir.</span></span>
+            <span>Designed By <span className="text-[#E9b470] text-lg aclonica-regular">Team Espoir.</span></span>
           </div>
           
           {/* Desktop View (left-aligned, single line) */}
           <div className="hidden md:block text-left">
-            © 2024 <span className="font-bold text-lg">DREAM CATERINGS.</span> All rights reserved | Designed By <span className="text-[#E9b470] text-lg font-bold">Team Espoir.</span>
+            © 2024 <span className="font-bold text-lg">DREAM CATERINGS.</span> All rights reserved | Designed By <span className="text-[#E9b470] text-lg font-bold aclonica-regular">Team Espoir.</span>
           </div>
         </div>
       </div>

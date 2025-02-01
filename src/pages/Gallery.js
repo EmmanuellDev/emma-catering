@@ -50,7 +50,7 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
       <div className="text-center mt-4">
           <h2 className="text-3xl font-bold mb-1 libre-baskerville-text1">Our Memorable Events<span className="text-[#951F44] animate-pulse"> ~</span></h2> {/* Only dot in sand color */}
-          <h2 className="text-5xl font-bold text-gray-800 mt-2 mb-12 libre-baskerville-text">Gallery</h2>
+          <h2 className="text-5xl font-bold aclonica-regular text-gray-800 mt-2 mb-12 libre-baskerville-text">Gallery</h2>
         </div>
 
         {/* Video Gallery */}

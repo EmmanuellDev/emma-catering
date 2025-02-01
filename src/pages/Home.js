@@ -28,9 +28,9 @@ const Home = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       {/* Content Wrapper */}
-      <div className="relative z-10 flex flex-col items-center justify-center">
+      <div className="relative flex flex-col items-center justify-center">
         <h1 className="text-4xl mb-4 tracking-wide uppercase leading-snug font-smooch">
-          Welcome to <span className="text-yellow-500">Dream Catering Service</span>
+          Welcome to <span className="text-yellow-500 aclonica-regular">Dream Catering Service</span>
         </h1>
 
         {/* Show only the current greeting with animation */}
@@ -41,13 +41,13 @@ const Home = () => {
         {/* Updated text content with center alignment */}
         <div className="mt-6 text-center">
           <p className="text-xl sm:text-2xl font-semibold">
-            We are the top <span className="text-yellow-400 font-bold">biryani event caterer</span> in Tamil Nadu.
+            We are the top <span className="text-yellow-400 font-bold aclonica-regular">biryani event caterer</span> in Tamil Nadu.
           </p>
           <p className="text-xl sm:text-2xl font-semibold">
-            We have completed over <span className="text-yellow-400 font-bold">200+</span> events,
+            We have completed over <span className="text-yellow-400 font-bold aclonica-regular">200+</span> events,
           </p>
           <p className="text-xl sm:text-2xl font-semibold">
-            supported by a professional team of <span className="text-yellow-400 font-bold">40 members</span>.
+            supported by a professional team of <span className="text-yellow-400 font-bold aclonica-regular">40 members</span>.
           </p>
         </div>
 

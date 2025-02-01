@@ -51,7 +51,7 @@ const ContactPage = () => {
       {/* Top Section */}
       <div className="bg-gray-100 text-black  py-16 px-6 md:px-20">
         <h1 className="tracking-wide mb-6 text-3xl font-bold libre-baskerville-text1">Hello Everyone<span className="text-[#951F44] animate-pulse"> ~</span></h1>
-        <h2 className="text-5xl font-bold mb-6 max-w-full libre-baskerville-text text-black">
+        <h2 className="text-5xl aclonica-regular font-bold mb-6 max-w-full text-black">
       {sentence.split("").map((char, index) => (
         <motion.span key={index} variants={textVariants} initial="hidden" animate="visible" custom={index}>
           {char}
@@ -87,7 +87,7 @@ const ContactPage = () => {
           <h2 className="text-[#1F1F1F] mb-2 text-3xl font-bold libre-baskerville-text1">
             Contact Us<span className="text-[#951F44] animate-pulse"> ~</span>
           </h2>
-          <h3 className="text-5xl font-semibold text-[#1F1F1F] libre-baskerville-text">Get In Touch</h3>
+          <h3 className="text-5xl font-semibold text-[#1F1F1F] aclonica-regular">Get In Touch</h3>
         </div>
 
         <div className="flex flex-col md:flex-row gap-12">

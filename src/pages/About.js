@@ -80,7 +80,7 @@ const About = () => {
             <h3 className="text-[#8B1F41] uppercase tracking-widest text-sm font-semibold mb-3">
               About Us
             </h3>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 libre-baskerville-text">
+            <h1 className="text-4xl lg:text-5xl font-bold aclonica-regular text-gray-900 leading-tight mb-6 libre-baskerville-text">
               Indulge in a celebration <br className="hidden lg:block" /> with great food!
             </h1>
             <p className="text-gray-700 text-base lg:text-lg leading-7 mb-8 libre-baskerville-text">
@@ -89,22 +89,22 @@ const About = () => {
   
             {/* Book Now Button */}
             <a
-      href="https://wa.me/9994873204"
-      className="relative flex items-center border-2 border-black text-black px-6 lg:px-8 py-3 lg:py-3 rounded-full font-semibold shadow-md group w-auto overflow-hidden"
-    >
-      {/* Background effect (Now at z-10) */}
-      <span className="absolute inset-0 bg-[#E9B472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-10"></span>
-
-      {/* Button Text (Now at z-20, stays above background) */}
-      <span className="relative z-20 transition-colors duration-300 group-hover:text-black">
-        BOOK NOW
-      </span>
-
-      {/* Arrow Circle (Now at z-20, properly visible) */}
-      <div className="ml-3 flex items-center justify-center w-9 h-9 lg:w-10 lg:h-10 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
-        <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black text-base lg:text-lg" />
-      </div>
-    </a>
+              href="https://wa.me/9994873204"
+              className="relative flex items-center border-2 border-black text-black px-6 lg:px-8 py-3 lg:py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
+            >
+              {/* Background effect */}
+              <span className="absolute inset-0 bg-[#E9B472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              
+              {/* Button Text */}
+              <span className="relative group-hover:text-black transition-colors duration-300">
+                BOOK NOW
+              </span>
+    
+              {/* Arrow Circle */}
+              <div className="ml-3 flex items-center justify-center w-12 h-8 lg:w-12 lg:h-8 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white">
+                <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black text-sm lg:text-base" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center justify-center">
           {/* Left Side - Text Content */}
           <div className="md:w-1/2 text-left md:ml-14"> {/* Increased left margin */}
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-8 leading-tight"> 
+            <h2 className="text-4xl aclonica-regular lg:text-5xl font-bold text-gray-800 mb-8 leading-tight"> 
               A Quality-Driven <br /> Catering Company
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -133,12 +133,12 @@ const About = () => {
               <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
               
               {/* Button Text */}
-              <span className="relative z-20 group-hover:text-black transition-colors duration-300">
+              <span className="relative group-hover:text-black transition-colors duration-300">
                 OUR MENU
               </span>
   
               {/* Arrow Circle */}
-              <div className="ml-3 flex items-center justify-center w-12 h-8 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white z-20">
+              <div className="ml-3 flex items-center justify-center w-12 h-8 rounded-full border-2 border-black bg-[#951F44] transition-all duration-300 group-hover:bg-white">
                 <FaArrowRight className="text-white transition-colors duration-300 group-hover:text-black" />
               </div>
             </a>
