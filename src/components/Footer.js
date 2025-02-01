@@ -11,10 +11,10 @@ const Footer = () => {
     <footer>
       {/* Marquee section */}
       <div className="bg-[#951F44] text-white py-6 overflow-hidden">
-    <div className="animate-marquee flex items-center text-3xl font-semibold">
+    <div className="animate-marquee flex items-center lg:text-4xl text-2xl">
       <div className="flex space-x-4">
         {/* Infinite loop effect by duplicating text */}
-        <span className="flex-shrink-0 libre-baskerville-text">
+        <span className="flex-shrink-0 aclonica-regular">
           Wedding Event <span className="mx-4">•</span>
           60th Wedding Event <span className="mx-4">•</span>
           Engagement <span className="mx-4">•</span>
@@ -26,7 +26,7 @@ const Footer = () => {
           Retirement Function <span className="mx-4">•</span>
         </span>
         {/* Duplicating content multiple times for an infinite effect */}
-        <span className="flex-shrink-0">
+        <span className="flex-shrink-0 aclonica-regular">
           Wedding Event <span className="mx-4">•</span>
           60th Wedding Event <span className="mx-4">•</span>
           Engagement <span className="mx-4">•</span>
@@ -37,7 +37,7 @@ const Footer = () => {
           Corporate Events <span className="mx-4">•</span>
           Retirement Function <span className="mx-4">•</span>
         </span>
-        <span className="flex-shrink-0">
+        <span className="flex-shrink-0 aclonica-regular">
           Wedding Event <span className="mx-4">•</span>
           60th Wedding Event <span className="mx-4">•</span>
           Engagement <span className="mx-4">•</span>

@@ -104,7 +104,7 @@ const ServicePage = () => {
     </div>
     <div className="container mx-auto px-6 py-12 text-center libre-baskerville-text">
       <h2 className="text-3xl libre-baskerville-text1">What We Do<span className="text-[#951F44] animate-pulse"> ~</span></h2>
-      <h3 className="text-4xl aclonica-regular font-semibold text-black mt-2 flex justify-center">
+      <h3 className="lg:text-4xl text-3xl aclonica-regular font-semibold text-black mt-2 flex justify-center">
       {title1.split("").map((letter, index) => (
         <motion.span
           key={index}
