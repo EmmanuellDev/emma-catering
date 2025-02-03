@@ -31,10 +31,10 @@ export default function Navbar() {
 
         {/* Book Now Button (Desktop) */}
         <div className="hidden md:block">
-          <a href="https://wa.me/9994873204" className="relative flex items-center justify-center border-2 border-black text-black px-8 py-3 rounded-full font-semibold shadow-md group overflow-hidden">
+          <a href="https://wa.me/9994873204" className="relative flex items-center justify-center border-2 border-black text-black px-5 py-3 rounded-full font-semibold shadow-md group overflow-hidden">
             <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             <span className="relative z-20 group-hover:text-black transition-colors duration-500 rye-regular">Book Now</span>
-            <div className="ml-3 flex items-center justify-center w-10 h-10 rounded-full bg-[#951F44] group-hover:bg-white transition-colors duration-300 z-30">
+            <div className="ml-3 flex items-center justify-center w-8 h-8 rounded-full bg-[#951F44] group-hover:bg-white transition-colors duration-300 z-30">
               <FaArrowRight className="text-white group-hover:text-black transition-colors duration-300" />
             </div>
           </a>
@@ -63,10 +63,10 @@ export default function Navbar() {
             <li><a href="/contact" className="hover:text-[#951F44] rye-regular">Contact</a></li>
           </ul>
           {/* Centered Book Now Button */}
-          <div className="flex justify-center mt-4 pb-4">
+          <div className="flex justify-center mt-2 pb-2">
             <a href="https://wa.me/9994873204" className="rye-regular flex items-center justify-center border-2 border-black text-black px-6 py-2 rounded-full hover:bg-[#951F44] hover:text-white">
               Book Now
-              <FaArrowRight className="ml-2 w-5 h-5" />
+              <FaArrowRight className="ml-2 w-3 h-3" />
             </a>
           </div>
         </div>

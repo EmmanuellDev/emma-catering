@@ -10,6 +10,7 @@ import Gallery from "./pages/Gallery";
 import Menu from "./pages/Menu";
 import PageTransition from "./components/PageTransition";
 import Loader from "./components/Loader";
+import Ch from "../src/pages/Ch"
 
 const AnimatedRoutes = () => {
   const location = useLocation();
