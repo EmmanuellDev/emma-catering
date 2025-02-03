@@ -357,7 +357,7 @@ const data = [
     </h3>
     <div className="flex flex-col md:flex-row w-full">
       {/* Left side - Carousel */}
-      <div className="w-full md:w-1/2 bg-gray-200 p-6 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 p-6 flex flex-col justify-center">
         <div className="text-center mb-4">
           <p className="text-xl mb-2">{data[currentIndex].description}</p>
           <p className="text-2xl text-black font-semibold text-center libre-baskerville-text">
@@ -393,7 +393,8 @@ const data = [
     </div>
     </section>
     <section>
-      
+      <div>
+      </div>
     </section>
     <Footer />
     </div>

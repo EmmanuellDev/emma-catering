@@ -26,7 +26,7 @@ const AnimatedRoutes = () => {
     {loading && <Loader onComplete={() => setLoading(false)} />}
     <AnimatePresence mode="wait">
     <Routes location={location} key={location.pathname} onChange={handleLoading}>
-        <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+        <Route path="/" element={<PageTransition><Ch /></PageTransition>} />
         <Route path="/about" element={<PageTransition><About /></PageTransition>} />
         <Route path="/services" element={<PageTransition><Service /></PageTransition>} />
         <Route path="/menu" element={<PageTransition><Menu /></PageTransition>} />
@@ -41,7 +41,6 @@ const AnimatedRoutes = () => {
 function App() {
   return (
     <Router>
-      <Navbar />
       <AnimatedRoutes />
     </Router>
   );
