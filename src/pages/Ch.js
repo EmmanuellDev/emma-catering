@@ -8,11 +8,11 @@ const ImageOverlay = () => {
         <img
           src={img1}
           alt="Image 1"
-          className="w-full h-auto opacity-40 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-2xl font-bold text-shadow-lg">
-            Your Text Here
+          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
+            25+ <br/> Years of Experience
           </span>
         </div>
       </div>
@@ -21,11 +21,11 @@ const ImageOverlay = () => {
         <img
           src={img1}
           alt="Image 2"
-          className="w-full h-auto opacity-40 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-2xl font-bold text-shadow-lg">
-            Your Text Here
+          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
+            250+ <br/> Menu Options
           </span>
         </div>
       </div>
@@ -34,11 +34,11 @@ const ImageOverlay = () => {
         <img
           src={img1}
           alt="Image 3"
-          className="w-full h-auto opacity-40 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-2xl font-bold text-shadow-lg">
-            Your Text Here
+          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
+            340 <br/> staff
           </span>
         </div>
       </div>
@@ -47,11 +47,11 @@ const ImageOverlay = () => {
         <img
           src={img1}
           alt="Image 3"
-          className="w-full h-auto opacity-40 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-2xl font-bold text-shadow-lg">
-            Your Text Here
+          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
+            125k <br/> Happy Foodies
           </span>
         </div>
       </div>
