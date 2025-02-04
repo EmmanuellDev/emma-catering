@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../requirements/logo.jpg";
+import Logo from "../requirements/logo.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="text-2xl font-bold text-black ml-4">
           <a href="/">
-            <img src={Logo} alt="Biryani Catering" className="h-18 w-33" />
+            <img src={Logo} alt="Biryani Catering" className="lg:h-24 h-18 lg:w-38 w-22 rounded-full" />
           </a>
         </div>
 

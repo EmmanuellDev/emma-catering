@@ -4,7 +4,7 @@ import {
   FaMapMarkerAlt, FaPhone, FaEnvelope 
 } from "react-icons/fa";
 import { MdArrowForward } from "react-icons/md";
-import logo from "../requirements/logo.jpg";
+import logo from "../requirements/logo.png";
 
 const Footer = () => {
   return (
