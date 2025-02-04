@@ -65,7 +65,7 @@ const ImageOverlay = () => {
         <img
           src={img13}
           alt="Image 1"
-          className="w-full h-33 opacity-40 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
@@ -78,7 +78,7 @@ const ImageOverlay = () => {
         <img
           src={img14}
           alt="Image 2"
-          className="w-full h-33 opacity-40 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
@@ -91,7 +91,7 @@ const ImageOverlay = () => {
         <img
           src={img15}
           alt="Image 3"
-          className="w-full h-33 opacity-40 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
@@ -104,7 +104,7 @@ const ImageOverlay = () => {
         <img
           src={img16}
           alt="Image 4"
-          className="w-full h-33 opacity-40 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
+          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">

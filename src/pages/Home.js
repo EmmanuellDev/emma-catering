@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import BG from "../requirements/bg.png";
 import { FaArrowRight, FaArrowDown } from "react-icons/fa";
 import I1 from "../requirements/img2.jpg";
@@ -85,34 +85,52 @@ const data = [
 
 const Counter = ({ end, duration = 2000, suffix = "+" }) => {
   const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const counterRef = useRef(null);
 
   useEffect(() => {
-    let startTime;
-    let animationFrame;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          startAnimation();
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
 
-    const animate = (currentTime) => {
-      if (!startTime) startTime = currentTime;
-      const progress = (currentTime - startTime) / duration;
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => {
+      if (counterRef.current) {
+        observer.unobserve(counterRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
+  const startAnimation = () => {
+    const startTime = Date.now();
+    const endTime = startTime + duration;
+
+    const updateCount = () => {
+      const now = Date.now();
+      const progress = Math.min((now - startTime) / duration, 1);
 
       if (progress < 1) {
         setCount(Math.floor(end * progress));
-        animationFrame = requestAnimationFrame(animate);
+        requestAnimationFrame(updateCount);
       } else {
         setCount(end);
       }
     };
 
-    animationFrame = requestAnimationFrame(animate);
-
-    return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
-    };
-  }, [end, duration]);
+    requestAnimationFrame(updateCount);
+  };
 
   return (
-    <span>
+    <span ref={counterRef}>
       {count}
       {suffix}
     </span>
