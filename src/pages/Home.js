@@ -27,19 +27,19 @@ const Home = () => {
   
 const data = [
   {
-    description: "I am a person who selected venus catering. Initially I was in a dilemma. Later I felt my decision is right. We ordered 300 breakfast and 300 lunch. Both are awesome. Thank you to Mr.Gurumurrthy. Your services are great. Keep up your good work.",
+    description: "I am a person who selected emma catering. Initially I was in a dilemma. Later I felt my decision is right. We ordered 300 breakfast and 300 lunch. Both are awesome. Thank you to Mr.Ramamoorthy. Your services are great. Keep up your good work.",
     customer: "Prem kumar Kalyanasundaram"
   },
   {
-    description: "We have planned housewarming function on June 9th. We booked venus catering based on very good reviews. Both Gurumurthy sir and his son Ruthresh came in- person and provided Extradinory service. We are very happy for the service and food items. Both our friends and family are very happy. Top class top notch food.",
+    description: "We have planned housewarming function on June 9th. We booked emma catering based on very good reviews. Both Ramamoorthy sir and his son Emmanuel came in- person and provided Extradinory service. We are very happy for the service and food items. Both our friends and family are very happy. Top class top notch food.",
     customer: "Sathish Kumar"
   },
   {
-    description: "I appreciate the exceptional service provided by Guru Murthy, the caterer, at my housewarming ceremony. His dedication and kindness were evident in the diverse and high-quality breakfast and lunch menu he offered. The addition of a tea and coffee stall by Kumbakonam Degree added great value, leaving my guests delighted. Notably, Guru Murthy himself ensured the impeccable service by personally serving food and even attending to guests. A heartfelt thank you for your outstanding service sir. Surely I will recommend your valuable service to my friends and relatives.",
+    description: "I appreciate the exceptional service provided by Ramamoorthy, the caterer, at my housewarming ceremony. His dedication and kindness were evident in the diverse and high-quality breakfast and lunch menu he offered. The addition of a tea and coffee stall by Kumbakonam Degree added great value, leaving my guests delighted. Notably, Ramamoorthy himself ensured the impeccable service by personally serving food and even attending to guests. A heartfelt thank you for your outstanding service sir. Surely I will recommend your valuable service to my friends and relatives.",
     customer: "Sujith Joseph"
   },
   {
-    description: "Venus catering is very very good in catering service, their hospitality is very very good , unexpected crowd was came into my daughters marriage, but Mr .Gurumoorthy tackled the situation easily and immediately managed and served to all coming to our marriage , I'm very very grateful to him , food they served was excellent and praised by all coming to our marriage at 18/2/24 &19/2/24.",
+    description: "Emma catering is very very good in catering service, their hospitality is very very good , unexpected crowd was came into my daughters marriage, but Mr. Ramamoorthy tackled the situation easily and immediately managed and served to all coming to our marriage , I'm very very grateful to him , food they served was excellent and praised by all coming to our marriage at 18/2/24 &19/2/24.",
     customer: "Uma Devi"
   }
 ];
@@ -55,7 +55,7 @@ const data = [
       image: E2,
       title: "Birthday Party",
       description:
-      "Make every birthday a memorable one with our birthday photography. Whether it’s a child's first birthday or a milestone celebration, we capture the joy, excitement, and love of the day and preserve it forever. At Venus Catering Service, we take care of the happiness of your guests by offering them amazing food on behalf of you.",
+      "Make every birthday a memorable one with our birthday photography. Whether it’s a child's first birthday or a milestone celebration, we capture the joy, excitement, and love of the day and preserve it forever. At Emma Catering Service, we take care of the happiness of your guests by offering them amazing food on behalf of you.",
     },
     {
       image: E3,
@@ -154,7 +154,7 @@ const Counter = ({ end, duration = 2000, suffix = "+" }) => {
       {/* Content Wrapper */}
       <div className="relative flex flex-col items-center justify-center">
         <h1 className="text-4xl mb-4 tracking-wide uppercase leading-snug font-smooch">
-          Welcome to <span className="text-yellow-500 aclonica-regular">Dream Catering Service</span>
+          Welcome to <span className="text-yellow-500 aclonica-regular">Emma Catering Service</span>
         </h1>
 
         {/* Show only the current greeting with animation */}
@@ -263,7 +263,7 @@ const Counter = ({ end, duration = 2000, suffix = "+" }) => {
                   Elevating Your Events <br className="hidden lg:block" /> with Exceptional Food.
                   </h1>
                   <p className="text-gray-700 text-base lg:text-lg leading-7 mb-8 libre-baskerville-text">
-                  Venus is The Place where Food is Celebrated over 25 Years. We Love to Create Unforgettable Culinary Experiences.
+                  Emma is The Place where Food is Celebrated over 25 Years. We Love to Create Unforgettable Culinary Experiences.
                   </p>
 
                   <div className="flex flex-col items-center lg:flex-row gap-8 pb-12">
@@ -343,7 +343,7 @@ const Counter = ({ end, duration = 2000, suffix = "+" }) => {
       </div>
       <div className="pt-8 flex justify-center">
       <a
-                    href="/service"
+                    href="/services"
                     className="relative flex items-center border-2 border-black text-black px-6 lg:px-8 py-3 lg:py-3 rounded-full font-semibold shadow-md group w-fit overflow-hidden"
                   >
                     {/* Background effect */}
@@ -394,7 +394,7 @@ const Counter = ({ end, duration = 2000, suffix = "+" }) => {
       <div className="border-10 lg:border-t-10 lg:border-b-10 border-t-15 border-b-10 border-yellow-400 p-6 lg:rounded-lg flex flex-col items-center text-center">
         <Heart className="w-12 h-12 mb-4 text-yellow-400 stroke-2" />
         <h3 className="text-2xl font-semibold mb-2 text-black libre-baskerville-text">Heritage</h3>
-        <p className="text-black libre-baskerville-text1 text-lg">Venus catering blends food and heart, rooted in family traditions.</p>
+        <p className="text-black libre-baskerville-text1 text-lg">Emma catering blends food and heart, rooted in family traditions.</p>
       </div>
       </div>
     </div>
@@ -447,61 +447,6 @@ const Counter = ({ end, duration = 2000, suffix = "+" }) => {
           alt="Catering Service" 
           className="w-full max-w-lg rounded-lg"
         />
-      </div>
-    </div>
-    </section>
-    <section>
-    <div className="flex flex-wrap md:flex-nowrap lg:pl-33 lg:pr-33 justify-around gap-8 p-5">
-      <div className="relative w-[45%] border-6 border-black md:w-1/4">
-        <img
-          src={img13}
-          alt="Image 1"
-          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
-            <Counter end={25} /> <br/> Years of Experience
-          </span>
-        </div>
-      </div>
-
-      <div className="relative w-[45%] border-6 border-black md:w-1/4">
-        <img
-          src={img14}
-          alt="Image 2"
-          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
-            <Counter end={250} /> <br/> Menu Options
-          </span>
-        </div>
-      </div>
-
-      <div className="relative w-[45%] border-6 border-black md:w-1/4">
-        <img
-          src={img15}
-          alt="Image 3"
-          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
-            <Counter end={40} /> <br/> Expertised staffs
-          </span>
-        </div>
-      </div>
-
-      <div className="relative w-[45%] border-6 border-black md:w-1/4">
-        <img
-          src={img16}
-          alt="Image 4"
-          className="w-full h-33 opacity-400 brightness-70 transition-opacity duration-300 ease-in-out hover:opacity-100"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-center libre-baskerville-text text-xl font-bold text-shadow-lg">
-            <Counter end={125} suffix="k+" /> <br/> Happy Foodies
-          </span>
-        </div>
       </div>
     </div>
     </section>

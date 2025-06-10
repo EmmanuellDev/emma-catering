@@ -12,14 +12,12 @@ export default function Navbar() {
   return (
     <header className="bg-gray-100 shadow-md fixed top-0 left-0 w-full z-10">
       <nav className="container mx-auto flex items-center justify-between py-3">
-        {/* Logo */}
         <div className="text-2xl font-bold text-black ml-4">
           <a href="/">
             <img src={Logo} alt="Biryani Catering" className="lg:h-24 h-18 lg:w-38 w-22 rounded-full" />
           </a>
         </div>
 
-        {/* Navigation Links (Desktop) */}
         <ul className="hidden md:flex ml-auto mr-40 space-x-10 text-lg font-semibold text-black">
           <li><a href="/" className="hover:text-[#E9b472] transition-colors duration-300 rye-regular">Home</a></li>
           <li><a href="/about" className="hover:text-[#E9b472] transition-colors duration-300 rye-regular">About</a></li>
@@ -29,7 +27,6 @@ export default function Navbar() {
           <li><a href="/contact" className="hover:text-[#E9b472] transition-colors duration-300 rye-regular">Contact</a></li>
         </ul>
 
-        {/* Book Now Button (Desktop) */}
         <div className="hidden md:block">
           <a href="https://wa.me/9994873204" className="relative flex items-center justify-center border-2 border-black text-black px-5 py-3 rounded-full font-semibold shadow-md group overflow-hidden">
             <span className="absolute inset-0 bg-[#E9b472] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
@@ -40,7 +37,6 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <div className="md:hidden mr-4">
           <button
             onClick={toggleMenu}
@@ -51,7 +47,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Navigation */}
       {menuOpen && (
         <div className="md:hidden bg-[#E9b472] shadow-md w-full absolute left-0 top-full">
           <ul className="flex flex-col items-start space-y-4 p-6 text-black text-lg font-semibold ml-6">
@@ -62,7 +57,7 @@ export default function Navbar() {
             <li><a href="/gallery" className="hover:text-[#951F44] rye-regular">Gallery</a></li>
             <li><a href="/contact" className="hover:text-[#951F44] rye-regular">Contact</a></li>
           </ul>
-          {/* Centered Book Now Button */}
+
           <div className="flex justify-center mt-2 pb-2">
             <a href="https://wa.me/9994873204" className="rye-regular flex items-center justify-center border-2 border-black text-black px-6 py-2 rounded-full hover:bg-[#951F44] hover:text-white">
               Book Now
@@ -73,4 +68,4 @@ export default function Navbar() {
       )}
     </header>
   );
-}
+};

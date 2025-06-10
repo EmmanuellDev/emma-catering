@@ -10,6 +10,7 @@ import E9 from "../requirements/img-eve-9.png";
 import AB from "../requirements/about-bg.png";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const services = [
   {
@@ -22,7 +23,7 @@ const services = [
     image: E2,
     title: "60th Wedding Event",
     description:
-      "What more happiness we can get more than getting blessings from a couple who are stepping into their 60th year of the wedding life. In our nuclear family system, seeing our elders and spending time with them became rarity. We at Venus Catering Service, want to provide a sumptuous food for all your guests who are attending for your family 60th wedding anniversary.",
+      "What more happiness we can get more than getting blessings from a couple who are stepping into their 60th year of the wedding life. In our nuclear family system, seeing our elders and spending time with them became rarity. We at Emma Catering Service, want to provide a sumptuous food for all your guests who are attending for your family 60th wedding anniversary.",
   },
   {
     image: E3,
@@ -40,7 +41,7 @@ const services = [
     image: E5,
     title: "Birthday Party",
     description:
-      "Make every birthday a memorable one with our birthday photography. Whether it’s a child's first birthday or a milestone celebration, we capture the joy, excitement, and love of the day and preserve it forever. At Venus Catering Service, we take care of the happiness of your guests by offering them amazing food on behalf of you.",
+      "Make every birthday a memorable one with our birthday photography. Whether it’s a child's first birthday or a milestone celebration, we capture the joy, excitement, and love of the day and preserve it forever. At Emma Catering Service, we take care of the happiness of your guests by offering them amazing food on behalf of you.",
   },
   {
     image: E6,
@@ -73,6 +74,7 @@ const ServicePage = () => {
   const title1 = "Premium Catering Services";
   return (
     <div className="bg-gray-100">
+      <Navbar />
           <div
       className="flex flex-col items-center mt-22 justify-center text-center h-[200px] relative"
       style={{

@@ -11,6 +11,7 @@ import P9 from "../requirements/p9.png";
 import AB from "../requirements/about-bg.png";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Menu = () => {
   const images = [P1, P2, P3, P4, P5, P6, P7, P8, P9];
@@ -18,6 +19,7 @@ const Menu = () => {
 
   return (
     <div>
+      <Navbar />
           <div
       className="flex flex-col items-center mt-22 justify-center text-center h-[200px] relative"
       style={{

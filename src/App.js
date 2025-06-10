@@ -18,7 +18,7 @@ const AnimatedRoutes = () => {
 
   const handleLoading = () => {
     setLoading(true);
-    setTimeout(() => setLoading(false), 1500); // Adjust as needed
+    setTimeout(() => setLoading(false), 1500);
   };
 
   return (

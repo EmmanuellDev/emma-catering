@@ -5,11 +5,10 @@ const Loader = ({ onComplete }) => {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay (adjust as needed)
     setTimeout(() => {
       setShow(false);
-      onComplete(); // Notify parent to hide loader
-    }, 1500); // Adjust timing as needed
+      onComplete();
+    }, 1500);
   }, [onComplete]);
 
   return (

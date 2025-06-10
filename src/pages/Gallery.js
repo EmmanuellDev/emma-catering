@@ -12,11 +12,13 @@ import img11 from "../requirements/img-11.png";
 import AB from "../requirements/about-bg.png";
 import { motion } from "framer-motion";
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const Gallery = () => {
     const title = "Gallery";
   return (
     <div>
+      <Navbar />
             <div
       className="flex flex-col items-center mt-22 justify-center text-center h-[200px] relative"
       style={{
@@ -26,7 +28,7 @@ const Gallery = () => {
         fontFamily: "Libre Baskerville, serif",
       }}
     >
-      {/* Overlay to dull the background */}
+
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative text-white p-4">
@@ -34,10 +36,10 @@ const Gallery = () => {
           {title.split("").map((letter, index) => (
             <motion.span
               key={index}
-              initial={{ opacity: 0, x: -20 }} // Start from left (-20px)
-              animate={{ opacity: 1, x: 0 }} // Move to its normal position
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.2, duration: 0.4 }}
-              className="mr-1" // Adds spacing between letters
+              className="mr-1"
             >
               {letter}
             </motion.span>
@@ -49,11 +51,10 @@ const Gallery = () => {
     <div className="bg-gray-200 py-12">
       <div className="container mx-auto px-4">
       <div className="text-center mt-4">
-          <h2 className="text-3xl font-bold mb-1 libre-baskerville-text1">Our Memorable Events<span className="text-[#951F44] animate-pulse"> ~</span></h2> {/* Only dot in sand color */}
+          <h2 className="text-3xl font-bold mb-1 libre-baskerville-text1">Our Memorable Events<span className="text-[#951F44] animate-pulse"> ~</span></h2>
           <h2 className="text-5xl font-bold aclonica-regular text-gray-800 mt-2 mb-12 libre-baskerville-text">Gallery</h2>
         </div>
 
-        {/* Video Gallery */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
           <div className="video-item border-8 border-black">
             <video className="w-full h-auto rounded-lg shadow-lg" controls>
@@ -68,7 +69,6 @@ const Gallery = () => {
             </video>
           </div>
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="video-item border-8 border-black">
             <video className="w-full h-auto rounded-lg shadow-lg" controls>
@@ -84,7 +84,6 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Image Gallery */}
         <div className="grid grid-cols-1 pt-12 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="image-item border-8 border-black">
             <img className="w-full h-auto rounded-lg shadow-lg" src={img6} alt="Gallery 1" />
